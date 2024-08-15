@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoFap Desafio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>NoFap Desafio</h1>
+        </header>
+
+        <section id="motivacao">
+            <p id="frase-motivacao">Frase motivacional aqui...</p>
+        </section>
+
+        <section id="desafio">
+            <label for="data-inicio">Data de Início:</label>
+            <input type="date" id="data-inicio">
+
+            <label for="meta-dias">Meta de Dias:</label>
+            <input type="number" id="meta-dias" min="1">
+
+            <button id="salvar-meta">Salvar Meta</button>
+
+
+            <div id="progresso-container">
+                <label for="progresso">Progresso:</label>
+                <progress id="progresso" value="0" max="100"></progress>
+                <p id="dias-restantes"></p>
+            </div>
+
+            <p id="mensagem-sucesso"></p>
+            <p id="mensagem-parabens"></p>
+
+
+            <button id="recai" class="danger">RECAI</button>
+        </section>
+
+        <footer>
+            <p>© 2024 NoFap Desafio. Todos os direitos reservados Edmar AI07.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
